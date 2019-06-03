@@ -6,14 +6,13 @@ namespace CreateClass
     {
         static void Main(string[] args)
         {
-            DateTime personBirthDate = new DateTime(1999, 05, 28);
-            DateTime employeeBirthDate = new DateTime(1992, 09, 25);
-            Person Anna = new Person("Anna", personBirthDate, "Female");
-            Employee Krisz = new Employee("Krisz", employeeBirthDate, "Male", 10000000, "Software Dev", 1);
-            Console.WriteLine(Anna.ToString());
-            Console.WriteLine("\n");
-            Console.WriteLine(Krisz.ToString());
-            Console.ReadLine();
+            Employee Kovacs = new Employee("Géza", DateTime.Now, "Male", 1000, "léhűtő");
+            Kovacs.room = new Room(111);
+            Employee Kovacs2 = (Employee)Kovacs.Clone();
+            Kovacs2.room.Number = 112;
+            Console.WriteLine(Kovacs.ToString());
+            Console.WriteLine(Kovacs2.ToString());
+            Console.ReadKey();
         }
     }
 }

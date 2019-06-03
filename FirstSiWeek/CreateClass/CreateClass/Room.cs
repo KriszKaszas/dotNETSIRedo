@@ -8,11 +8,11 @@ namespace CreateClass
 {
     class Room
     {
-        public int RoomNumber { get; set; }
+        public int Number { get; set; }
 
         public Room (int roomNumber)
         {
-            RoomNumber = roomNumber;
+            Number = roomNumber;
         }
     }
 }
