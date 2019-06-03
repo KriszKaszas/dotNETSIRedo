@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreateClass
 {
@@ -11,7 +7,7 @@ namespace CreateClass
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
 
-        Gender gender;
+        public Gender gender;
 
         public Person(string name, DateTime birthDate, String inputGender)
         {

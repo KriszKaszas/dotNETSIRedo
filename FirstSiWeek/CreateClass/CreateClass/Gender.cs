@@ -1,6 +1,6 @@
 ﻿namespace CreateClass
 {
-    enum Gender
+    public enum Gender
     {
         MALE,
         FEMALE
